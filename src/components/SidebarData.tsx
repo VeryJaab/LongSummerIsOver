@@ -7,8 +7,8 @@ import {MdManageSearch} from "react-icons/md";
 
 export const SidebarData: SidebarItem[] = [
     {
-        title: 'Dashboard',
-        path: '/dashboard',
+        title: 'Timetable',
+        path: '/timetable',
         icon: <TbTableFilled/>,
         // iconClosed: <FaCaretDown/>,
         // iconOpened: <FaCaretUp/>,

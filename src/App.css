@@ -4,18 +4,13 @@
   box-sizing: border-box;
 }
 
-html,
-body {
-  color: #fff;
-}
-
 input{
   display: flex;
   width: 50rem;
   height: 2rem;
 }
 
-.dashboard {
+.timetable {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,12 +20,19 @@ input{
 }
 
 .search {
-  display: flex;
+  /* display: flex;
   justify-content: center;
   align-items: center;
   font-size: 3rem;
   color: #000000;
-  height: 90vh;
+  height: 50vh; */
+  padding-top: 15vh;
+  width: 70%;
+  margin: auto; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 200px;
 }
 
 .enrollment {
@@ -41,3 +43,4 @@ input{
   color: #000000;
   height: 90vh;
 }
+

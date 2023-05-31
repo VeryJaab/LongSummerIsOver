@@ -1,19 +1,25 @@
 import { FC } from "react";
 import React from "react";
-import {AiOutlineSearch} from "react-icons/ai";
+import {AiOutlineSearch,AiOutlineClose} from "react-icons/ai";
+import "./SearchBar.css";
 
 const Search: FC = () =>{
-    // Test
-    const [text, setText] = React.useState('');
+    const [input, setInput] = React.useState('');
     return <div className="search">
+    <div className="search-from-wrapper">
+        <AiOutlineSearch id="search-icon"/>
         <input 
-        type="text" 
-        placeholder="Search for course in semester(course no., course title)" 
-        value={text} 
-        onChange={e => setText(e.target.value)}
+        placeholder="Search for course(course no., course title)"
+        value={input} 
+        onChange={(e) => setInput(e.target.value)}
+        onKeyUp={(e) => {
+            if (e.key !== "Enter") return;
+        }}
         />
-        <button><AiOutlineSearch/></button>
+    </div>
+       
     </div>;
+    
 }
 
 export default Search;

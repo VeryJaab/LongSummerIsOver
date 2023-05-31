@@ -1,7 +1,7 @@
 import { FC } from "react";
 
-const Dashboard: FC = () =>{
-    return <div className="dashboard">Dashboard</div>;
+const Timetable: FC = () =>{
+    return <div className="timetable">Timetable</div>;
 }
 
-export default Dashboard;
+export default Timetable;
