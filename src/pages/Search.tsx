@@ -5,7 +5,11 @@ import "./SearchBar.css";
 
 const Search: FC = () =>{
     const [input, setInput] = React.useState('');
-    return <div className="search">
+    return <div className="search-from">
+    <div className="search">
+        <div className="search-head1"><h1>Search</h1></div>
+        <div><h2>search for avaliable course</h2></div>
+    </div>
     <div className="search-from-wrapper">
         <AiOutlineSearch id="search-icon"/>
         <input 
